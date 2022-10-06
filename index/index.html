@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="cabecalho">
+        <h1 id="title">POKEDEX</h1>
+    </header>
+
+    <section class="main">
+
+        <div id="filtros">
+            <form method="get" id="pesquisa">
+                <input type="text" list="teste" id="pesquisaNome" placeholder="Ex: Pikachu">
+                <datalist id="teste">
+                    <option value="teste">
+                    <option value="charizard">
+                </datalist>
+                <button type="submit" id="enviarNome"> <p id="testes">></p> </button>
+            </form>
+
+            <form method="get" id="tipos">
+                <select id="selecionar">
+                    <option value="teste">Padão</option>
+                    <option value="valor">valor</option>
+                </select>
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </div>
+
+        <div id="areapokemon">
+            <div class="linha">
+            </div>
+        </div>
+
+        
+    </section>
+
+
+    <script type="module" src="main.js"></script>
+    
+</body>
+</html>
