@@ -1,27 +1,17 @@
-function inicio(){
-
 const pokeJSON = localStorage.getItem('pokemon');
-const Pokemon = JSON.parse(pokeJSON);
-
-const arrayPokemon = [];
-
-for(let p in Pokemon){
-    arrayPokemon.push(Pokemon[p]);
-}
-console.log(arrayPokemon);
+const Pokemon = JSON.parse(pokeJSON);   
 
 const numPokeJSON = localStorage.getItem('poke');
 let numPoke = JSON.parse(numPokeJSON);
-const pok = teste();
+const pok = pegaPokemon();
 
-function teste(){
+function pegaPokemon(){
     for(let i in Pokemon){
         if(Pokemon[i].numero == numPoke){
             return Pokemon[i];
         }
     }
 }
-
 
 const imagemPoke = document.querySelector('#imagem');
 function colocaIMG(){
@@ -96,7 +86,7 @@ direita.addEventListener('click', function(){
 })
 
 
-function lero(){
+function inicio(){
     colocaIMG();
     colocaNome();  
     colocaAtr();
@@ -106,9 +96,7 @@ function lero(){
     if(pok.tipo2){
         tipos(pok.tipo2);
     }
+    document.title =`Sobre: ${pok.nome}`;
 }
 
-lero();
-
-}
 inicio();
