@@ -1,5 +1,6 @@
-const pokeJSON = localStorage.getItem('pokemon');
-const Pokemon = JSON.parse(pokeJSON);   
+import {teste} from '../pokemons/pokemons.js'
+
+const Pokemon = teste();
 
 const numPokeJSON = localStorage.getItem('poke');
 let numPoke = JSON.parse(numPokeJSON);

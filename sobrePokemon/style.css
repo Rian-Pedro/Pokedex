@@ -56,6 +56,10 @@ h2.direita{
     position: relative;
 }
 
+h2.direita, h2.esquerda{
+    user-select: none;
+}
+
 h2.direita:hover{
     background-image: url(../img/RectangleDHover.png);
     transition: all 0.5s;
