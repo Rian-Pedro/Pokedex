@@ -34,7 +34,7 @@ h2.esquerda,h2.direita{
 }
 
 h2.esquerda{
-    background-image: url(../img/RectangleE.png);
+    background-image: url(../../../img/RectangleE.png);
     background-size: cover;
     background-repeat: no-repeat;
     text-indent: 100%;
@@ -43,12 +43,12 @@ h2.esquerda{
 }
 
 h2.esquerda:hover{
-    background-image: url(../img/RectangleEHover.png);
+    background-image: url(../../../img/RectangleEHover.png);
     transition: all 0.5s;
 }
 
 h2.direita{
-    background-image: url(../img/RectangleD.png);
+    background-image: url(../../../img/RectangleD.png);
     background-size: cover;
     background-repeat: no-repeat;
     text-indent: -100%;
@@ -61,14 +61,14 @@ h2.direita, h2.esquerda{
 }
 
 h2.direita:hover{
-    background-image: url(../img/RectangleDHover.png);
+    background-image: url(../../../img/RectangleDHover.png);
     transition: all 0.5s;
 }
 
 div#teste{
     width: 248px;   
     height: 50px;
-    background-image: url(../img/vetor.png);
+    background-image: url(../../../img/vetor.png);
     background-size: cover;
     position: relative;
     left: 38%;
@@ -214,18 +214,11 @@ div#evolucao{
     border-radius: 20px;
 }
 
-div#evolu1, div#evolu2, div#evolu3{
-    width: 100px;
-    height: 100px;
-    margin: 10px 10px 10px 10px;
-    background-color: white;
-}
-
 div#caixaEvo{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
     align-items: center;
 
 }
@@ -266,4 +259,20 @@ div.divTipo.Flying{
 div#tipos{
     display: flex;
     gap: 20px;
+}
+
+div#evolu1 img, div#evolu2 img, div#evolu3 img{
+    width: 100px;
+    height: 100px;
+}
+
+div#evolu1, div#evolu2, div#evolu3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    margin: 10px 10px 10px 10px;
+    background-color: white;
 }

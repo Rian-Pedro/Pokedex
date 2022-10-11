@@ -10,6 +10,9 @@
             peso: '6.9 kg',
             categoria: 'Seed',
             habilidades: 'Overgrow',
+            evolucao1: 'Bulbasaur',
+            evolucao2: 'Ivysaur',
+            evolucao3: 'Venusaur',
         },
         {
             nome: 'Ivysaur',
@@ -21,6 +24,9 @@
             peso: '13.0 kg',
             categoria: 'Seed',
             habilidades: 'Overgrow',
+            evolucao1: 'Bulbasaur',
+            evolucao2: 'Ivysaur',
+            evolucao3: 'Venusaur',
         },
         {
             nome: 'Venusaur',
@@ -32,6 +38,9 @@
             peso: '100.0 kg',
             categoria:'Seed',
             habilidades:'Overgrow',
+            evolucao1: 'Bulbasaur',
+            evolucao2: 'Ivysaur',
+            evolucao3: 'Venusaur',
         },
         {
             nome: 'Charmander',
@@ -43,6 +52,9 @@
             peso:'8.5 kg',
             categoria:'Lizard',
             habilidades:'Blaze',
+            evolucao1: 'Charmander',
+            evolucao2: 'Charmeleon',
+            evolucao3: 'Charizard',
         },
         {
             nome: 'Charmeleon',
@@ -54,6 +66,9 @@
             peso:'19.0 kg',
             categoria:'Flame',
             habilidades:'Blaze',
+            evolucao1: 'Charmander',
+            evolucao2: 'Charmeleon',
+            evolucao3: 'Charizard',
         },
         {
             nome: 'Charizard',
@@ -65,6 +80,9 @@
             peso:'90.5 kg',
             categoria:'Flame',
             habilidades:'Blaze',
+            evolucao1: 'Charmander',
+            evolucao2: 'Charmeleon',
+            evolucao3: 'Charizard',
         },
         {
             nome: 'Squirtle',
@@ -76,6 +94,9 @@
             peso:'9.0 kg',
             categoria:'Tiny Turtle',
             habilidades:'Torrent',
+            evolucao1: 'Squirtle',
+            evolucao2: 'Wartortle',
+            evolucao3: 'Blastoise',
         },
         {
             nome: 'Wartortle',
@@ -87,6 +108,9 @@
             peso:'22.5 kg',
             categoria:'Turtle',
             habilidades:'Torrent',
+            evolucao1: 'Squirtle',
+            evolucao2: 'Wartortle',
+            evolucao3: 'Blastoise',
         },
         {
             nome: 'Blastoise',
@@ -98,6 +122,9 @@
             peso:'85.5 kg',
             categoria:'Shellfish',
             habilidades:'Torrent',
+            evolucao1: 'Squirtle',
+            evolucao2: 'Wartortle',
+            evolucao3: 'Blastoise',
         },
         {
             nome: 'Pikachu',
