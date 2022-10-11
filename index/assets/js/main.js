@@ -125,15 +125,5 @@ form.addEventListener('submit', function(e){
         reload.remove();
         inicio();
     })
-
-    // const pokemonDoNome = teste();
-    
-    // function teste(){
-    //     for(let i of pokemon){
-    //         if(i.nome === nomeCapturado){
-    //              return i;
-    //         }
-    //     }
-    // }
 });
 
