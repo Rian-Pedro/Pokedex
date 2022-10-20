@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: black;
+}
+
+
+header#cabecalho{
+    background-color: #000000ef;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section#setas{
+    width: 100%;
+    display: flex;
+}
+
+h2.esquerda,h2.direita{
+    color: white;
+    width: 50%;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.esquerda{
+    background-image: url(../../../img/RectangleE.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+h2.esquerda:hover{
+    background-image: url(../../../img/RectangleEHover.png);
+    transition: all 0.5s;
+}
+
+h2.direita{
+    background-image: url(../../../img/RectangleD.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-indent: -100%;
+    cursor: pointer;
+    position: relative;
+}
+
+h2.direita, h2.esquerda{
+    user-select: none;
+}
+
+h2.direita:hover{
+    background-image: url(../../../img/RectangleDHover.png);
+    transition: all 0.5s;
+}
+
+div#teste{
+    width: 248px;   
+    height: 50px;
+    background-image: url(../../../img/vetor.png);
+    background-size: cover;
+    position: relative;
+    left: 38%;
+    bottom: 50px;
+}
+
+main.main{
+    width: 90%;
+    margin: 20px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section#principal{
+    width: 100%;
+    background-color: white;
+    padding-bottom: 150px;
+}
+
+div#title{
+    text-align: center;
+}
+
+div#conteudo{
+    width: 90%;
+    margin-top: 70px;
+    margin-left: 28px;
+    padding-left: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+div#imagem{
+    width: 400px;
+    height: 400px;
+}
+
+div#imagem img{
+    width: 400px;
+    height: 400px;
+}
+
+div#descr{
+    width: 45%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 20px;
+    padding-left: 15px;
+    gap: 30px;
+}
+
+p#descrPoke{
+    font-size: 14px;
+    width: 80%;
+    color: black;
+}
+
+div#atributos{
+    width: 85%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px;
+    background-color: #303030;
+    border-radius: 20px;
+}
+
+div.h3Atributos:has(h3) h3:nth-of-type(1){
+    color: white;
+}
+
+div.h3Atributos:has(h3) p:nth-child(2){
+    color: #A9A9A9;
+}
+
+div#altura,div#peso,div#categoria,div#habilidades{
+    width: 100px;
+}
+
+div#altura{
+    margin-right: 110px;
+}
+
+div#categoria{
+    margin-right: 110px;
+}
+
+div#tipagem{
+    width: 36.14%;
+    padding: 10px 0 20px 0;
+}
+
+div#type, div#weaknesses{
+    padding: 0 0 0 20px;
+}
+
+
+div#linha{
+    border-top: 1px solid #0000005f;
+    margin: 40px auto 30px auto;
+    width: 80%;
+}
+
+
+div#type:has(h3) h3, div#weaknesses h3{
+    margin-bottom: 20px;
+}
+
+div.divTipo{
+    font-size: 12px;
+    width: 105px;
+    padding: 2px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+}
+
+div#weaknesses{
+    margin-bottom: 0;
+}
+
+div#evolucao{
+    width: 51.28%;
+    background-color: #303030;
+    padding: 10px 10px 30px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+div#caixaEvo{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+
+}
+
+div#evolucao h3{
+    align-self: flex-start;
+    margin: 5px 0 10px 20px;
+    color: white;
+}
+
+
+div.divTipo.Water{
+    background-color: #4790fd;
+}
+
+div.divTipo.Fire{
+    background-color: #ff7d4a;
+}
+
+div.divTipo.Grass{
+    background-color: #8cc51bd2;
+    color: black;
+}
+
+div.divTipo.Poison{
+    background-color: #b500b8af;
+}
+
+div.divTipo.Electric{
+    background-color: #ffd000;
+    color: black;
+}
+div.divTipo.Flying{
+    background: linear-gradient(#00d1fa 50%,#b9b9b9 50%);
+    color: black;
+}
+
+div#tipos{
+    display: flex;
+    gap: 20px;
+}
+
+div#evolu1 img, div#evolu2 img, div#evolu3 img{
+    width: 100px;
+    height: 100px;
+}
+
+div#evolu1, div#evolu2, div#evolu3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 120px;
+    height: 120px;
+    margin: 10px 10px 10px 10px;
+    background-color: white;
+}
