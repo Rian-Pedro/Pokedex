@@ -136,7 +136,6 @@ div#areapokemon{
 ::-webkit-scrollbar{
     background-color: #545454;
     width: 10px;
-    padding-right: 5px;
 }
 
 ::-webkit-scrollbar-thumb{
