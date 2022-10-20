@@ -9,6 +9,12 @@ body{
     background-color: black;
 }
 
+h1 img {
+    width: 25px;
+    height: 25px;
+    margin: 0 1px 0 2px;
+}
+
 header#cabecalho{
     background-color: #000000ef;
     color: white;
