@@ -237,4 +237,16 @@ div.divTipo{
     .pokemon{
         margin: 0 auto;
     }
+
+    section.main{
+        border: 1px solid red;
+        height: 100vh;
+        display: block;
+    }
+
+    div#areapokemon{
+        border: 1px solid red;
+        height: 100vh;
+        
+    }
 }
