@@ -248,20 +248,39 @@ div.divTipo{
         height: 80vh;
     }
 
-    div#filtros{
-        display:none;
-    }
-
     .pokemon{
         width: 150px;
         height: 240px;
     }
 }
 
-@media (max-width: 321px) {
+@media (min-width: 768px) {
+
+    form#tipos{
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
     .pokemon{
         width: 120px;
         height: 210px;
+    }
+
+    form#tipos{
+        display: none;
+    }
+
+    form{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input#pesquisaNome{
+        width: 75%;
     }
 
     img{
