@@ -43,7 +43,7 @@ p.nomePoke{
 }
 
 section.main{
-    width: 879px;
+    width: 80%;
     height: 428px;
     margin: 20px auto 0 auto;
     display: flex;
@@ -53,12 +53,13 @@ section.main{
 }
 
 div.linha{
-    width: 783px;
+    width: 90%;
     display: flex;
     margin: 10px auto 20px auto;
     flex-direction: row;
     gap: 21px;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 div#filtros{
@@ -228,4 +229,12 @@ div.divTipo{
     display: flex;
     gap: 5px;
     margin-top: 10px;
+}
+
+/* --------------------- */
+
+@media (max-width: 1025px) {
+    .pokemon{
+        margin: 0 auto;
+    }
 }
