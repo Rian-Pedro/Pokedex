@@ -248,7 +248,7 @@ div.divTipo{
         height: 80vh;
     }
 
-    #filtros{
+    div#filtros{
         visibility: hidden;
     }
 }
