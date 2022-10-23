@@ -324,7 +324,6 @@ div.divTipo{
         height: 100vh;
     }
 
-
     .pokemon{
         width: 150px;
         height: 230px;
@@ -385,7 +384,7 @@ div.divTipo{
 @media (min-width: 768px) and (max-width: 1023px){
     
     section.main{
-        width: 90%;
+        width: 80%;
     }
 
     .pokemon{
