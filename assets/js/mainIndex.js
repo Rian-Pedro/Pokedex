@@ -95,12 +95,20 @@ function criaPokemon(nome, tipo1, tipo2, num){
 const form = document.querySelector('.pesquisa');
 form.addEventListener('submit', function(e){
     e.preventDefault();
-    let name = document.querySelector('#pesquisaNome').value;
-    let casa = document.querySelector('#pesquisaNome');
-
     const pokemonteste = document.querySelectorAll('div .pokemon');
+    const botao = document.querySelector("#enviarNome");
+    let casa = document.querySelector('#pesquisaNome');
+    let name = document.querySelector('#pesquisaNome').value;
 
-    const testee = document.querySelector('.nomePoke');
+    if(!casa.value){
+        for(let i of pokemonteste){
+            i.remove();
+        }
+        botao.classList.remove('reload');
+        botao.classList.add('search');
+        inicio();
+        return;
+    }
 
     for(let i of pokemonteste){
         if(!i.innerHTML.includes(name)){
@@ -109,21 +117,31 @@ form.addEventListener('submit', function(e){
     }
 
     casa.value = '';
+    botao.classList.remove('search');
+    botao.classList.add('reload');
 
-    const divPesquisa = document.createElement('div');
-    divPesquisa.style.width = '10px';
-    divPesquisa.style.height = '10px';
-    divPesquisa.style.background = 'blue';
-    divPesquisa.setAttribute('id', 'reload');
-    form.appendChild(divPesquisa);
-
-    const reload = document.querySelector('#reload');
-    reload.addEventListener('click', function(){
-        for(let i of pokemonteste){
-                i.remove();
-        }
-        reload.remove();
-        inicio();
-    })
 });
+
+const filtroSelecionado = document.querySelector("#tipos");
+filtroSelecionado.addEventListener("submit", function(e){
+    e.preventDefault();
+    const valorFiltro = document.querySelector("#selecionar");
+    
+    const pokemonteste = document.querySelectorAll('div .pokemon');
+    for(let i of pokemonteste){
+        if(!i.innerHTML.includes(valorFiltro.value)){
+            i.remove();
+        }
+        
+        if(valorFiltro.value == 'Padrao'){
+            for(let i of pokemonteste){
+                i.remove();
+            }
+
+            inicio();
+            return;
+        }
+    }
+
+})
 

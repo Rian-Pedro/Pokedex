@@ -1,3 +1,8 @@
+@font-face {
+    font-family: teste;
+    src: url("../../fonts/font4.ttf");
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,22 +11,27 @@
 }
 
 body{
-    background-color: black;
+    background-color: #54123B;
+    font-size: 25px;
 }
 
 h1 img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     margin: 0 1px 0 2px;
 }
 
 header#cabecalho{
-    background-color: #000000ef;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding-top: 20px;
+}
+
+header h1{
+    font-family:teste;
+    font-weight: 900;
 }
 
 p.nomePoke{
@@ -40,6 +50,7 @@ p.nomePoke{
     cursor: pointer;
 	user-select: none;
     background-color: white;
+    border-radius: 10px;
 }
 
 section.main{
@@ -65,13 +76,13 @@ div.linha{
 div#filtros{
     width: 100%;
     height: 50px;
-    background-color: rgb(56, 56, 56);
+    background-color: #C02739;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-form#pesquisa{
+form.pesquisa{
     display: flex;
     align-items: center;
     width: 350px;
@@ -83,28 +94,33 @@ input#pesquisaNome{
     border: none;
     width: 300px;
     height: 25px;
-    background-color: black;
+    background-color: #84142D;
     color: white;
     padding-left: 10px;
 }
 
+input#pesquisaNome:focus{
+    outline: none;
+}
+
 input#pesquisaNome::placeholder{
-    color: darkgray;
+    color: #ffffffc3;
 }
 
 select#selecionar{
     width: 110px;
     text-align: center;
     border-radius: none;
-    border: 1px solid black;
+    border: none;
 }
 
 button#enviar{
     width: 50px;
     border: none;
-    background-color: black;
+    background-color: #84142D;
     color: white;
     padding: 5px;
+    cursor: pointer;
 }
 
 button#enviarNome{
@@ -112,10 +128,25 @@ button#enviarNome{
     height: 30px;
     border-radius: 50px;
     border: none;
-    background-color: black;
+    background-color: #84142D;
+    padding-left: 50px;
     color: white;
     margin-left: 10px;
     cursor: pointer;
+}
+
+.reload{
+    background-image: url(../../img/reload.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.search{
+    background-image: url(../../img/seta2.png);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 p#testes{
@@ -131,16 +162,16 @@ div#areapokemon{
     align-items: center;
     flex-direction: column;
     padding-top: 10px;
-    background-color: #ffffff;
+    background-color: #e6e6e6;
 }
 
 ::-webkit-scrollbar{
-    background-color: #545454;
+    background-color: #09463b;
     width: 10px;
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #181818;
+    background-color: #29C7AC;
     border-radius: 100px;
     width: 5px;
 }
@@ -232,36 +263,18 @@ div.divTipo{
 }
 
 /* --------------------- */
-
-@media (max-width: 1025px) {
-    .pokemon{
-        margin: 0 auto;
-    }
+/* telas de 320px à 374px */
+@media (max-width: 374px){ 
 
     section.main{
         width: 100%;
-        height: 50vh;
-        display: block;
     }
 
-    div#areapokemon{
-        height: 80vh;
+    div.linha{
+        display: flex;
+        justify-content: center;
     }
 
-    .pokemon{
-        width: 150px;
-        height: 240px;
-    }
-}
-
-@media (min-width: 768px) {
-
-    form#tipos{
-        display: block;
-    }
-}
-
-@media (max-width: 767px) {
     .pokemon{
         width: 120px;
         height: 210px;
@@ -287,4 +300,86 @@ div.divTipo{
         width: 120px;
         height: 120px;
     }
+}
+
+/* telas de 375px à 424px */
+@media (min-width: 375px) and (max-width: 424px){
+    
+    section.main{
+        width: 100%;
+    }
+
+    div.linha{
+        display: flex;
+        justify-content: center;
+    }
+
+    .pokemon{
+        width: 150px;
+        height: 230px;
+    }
+
+    form#tipos{
+        display: none;
+    }
+
+    form{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input#pesquisaNome{
+        width: 75%;
+    }
+}
+
+/* telas de 425px à 767px */
+@media (min-width: 425px) and (max-width: 767px){
+    
+    section.main{
+        width: 90%;
+    }
+
+    div.linha{
+        display: flex;
+        justify-content: center;
+    }
+
+    .pokemon{
+        width: 157px;
+        height: 230px;
+    }
+
+    form#tipos{
+        display: none;
+    }
+
+    form{
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    input#pesquisaNome{
+        width: 75%;
+    }
+}
+
+/* telas de 768px à 1023px */
+@media (min-width: 768px) and (max-width: 1023px){
+    
+    section.main{
+        width: 90%;
+    }
+
+    .pokemon{
+        width: 180px;
+        height: 230px;
+    }
+
 }
