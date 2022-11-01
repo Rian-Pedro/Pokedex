@@ -163,6 +163,7 @@ div#areapokemon{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
     padding: 15px;
     background-color: #e6e6e6;
 }
