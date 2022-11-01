@@ -8,6 +8,7 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body{
@@ -71,6 +72,7 @@ div.linha{
     gap: 21px;
     flex-wrap: wrap;
     justify-content: flex-start;
+    border: 1px solid red;
 }
 
 div#filtros{
@@ -159,9 +161,9 @@ div#areapokemon{
     height: 378px;
     overflow: auto;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 10px;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
     background-color: #e6e6e6;
 }
 

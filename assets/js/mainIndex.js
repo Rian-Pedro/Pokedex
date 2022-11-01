@@ -87,7 +87,7 @@ function criaContainerTipo(tipo1,tipo2){
 
 //cria card do Pokemon
 function criaPokemon(nome, tipo1, tipo2, num){
-    const areaPokemon = document.querySelector('.linha');
+    const areaPokemon = document.querySelector('#areapokemon');
     areaPokemon.appendChild(criaLink(tipo1,num,criaIMG(tipo1,nome),criaNomeNum(nome,num,criaContainerTipo(tipo1,tipo2))));
 }
 
